@@ -14,6 +14,11 @@ export default {
         colors: {
             primary: "#000000",
             secondary: "#000000",
+            pink: "#EB14BC",
+            purple: "#AF14EB",
+            "light-purple": "#CF72F3",
+            "dark-purple": "#46085E",
+            "footer-bg": "#27282B",
         },
         extend: {
             fontFamily: {
