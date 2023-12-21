@@ -1,11 +1,14 @@
+import { Head } from "@inertiajs/react";
 import MainNavBar from "@/Components/ui/MainNavBar";
+import Footer from "@/Components/ui/Footer";
 
-export default function Guest({ children }) {
+export default function Guest({ children, title }) {
     return (
         <div>
-            <MainNavBar/>
+            <Head title={title} />
+            <MainNavBar />
             <main>{children}</main>
-            {/* Insert the footer here */}
+            <Footer />
         </div>
     );
 }

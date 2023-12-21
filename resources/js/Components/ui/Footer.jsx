@@ -1,9 +1,14 @@
-export default function Footer({}) {
+import wizard from "/public/assets/images/access-wizard.png";
+export default function Footer() {
     return (
-        <footer className="h-[720px] w-full bg-footer">
-            <div className="flex w-3/5 h-full mx-auto py-16">
+        <footer className="w-full bg-footer">
+            <div className="flex flex-col w-3/5 h-full mx-auto py-16 md:flex-row">
                 <div className="w-1/2 px-8 py-8">
-                    <div className="bg-access-wizard bg-contain bg-no-repeat w-full h-full" />
+                    <img
+                        src={wizard}
+                        alt="ACCESS Wizard"
+                        className="w-full h-full"
+                    />
                 </div>
                 <div className="w-1/2 px-8 py-8 text-white text-lg space-y-8">
                     <div className="flex w-full justify-between space-x-16">
