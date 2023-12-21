@@ -1,9 +1,5 @@
-import { Link, Head } from '@inertiajs/react';
-import { Events1, Events2, Events3 } from '/public/assets/images/'
-import Button from '@/Components/Button';
-import PrimaryButton from '@/Components/PrimaryButton';
-
-export default function Welcome({ auth, laravelVersion, phpVersion }) {
+import PrimaryButton from "./PrimaryButton";
+export default function Blogs(props) {
     return (
         <>
             <section className='flex flex-col items-center bg-lighter-purple p-12'>
