@@ -1,11 +1,12 @@
 import MainNavBar from "@/Components/ui/MainNavBar";
+import Footer from "@/Components/ui/Footer";
 
 export default function Guest({ children }) {
     return (
         <div>
-            <MainNavBar/>
+            <MainNavBar />
             <main>{children}</main>
-            {/* Insert the footer here */}
+            <Footer />
         </div>
     );
 }

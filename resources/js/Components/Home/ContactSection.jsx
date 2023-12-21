@@ -1,4 +1,4 @@
-import PrimaryButton from "@/Components/PrimaryButton";
+import PrimaryButton from "@/Components/ui/PrimaryButton";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function ContactSection({}) {
