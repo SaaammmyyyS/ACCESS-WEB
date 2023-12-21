@@ -1,6 +1,7 @@
-import { Head } from '@inertiajs/react';
-import HeroSection from '@/Components/Home/HeroSection';
-import Guest from '@/Layouts/GuestLayout';
+import { Head } from "@inertiajs/react";
+import HeroSection from "@/Components/Home/HeroSection";
+import ContactSection from "@/Components/Home/ContactSection";
+import Guest from "@/Layouts/GuestLayout";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
