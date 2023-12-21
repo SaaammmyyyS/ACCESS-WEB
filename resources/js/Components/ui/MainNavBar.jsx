@@ -1,5 +1,6 @@
 import { Link } from "@inertiajs/react";
 import logo from "/public/assets/images/logo.png";
+import PrimaryButton from "@/Components/ui/PrimaryButton";
 
 export default function MainNavBar() {
     return (
@@ -29,9 +30,7 @@ export default function MainNavBar() {
                         </Link>
                     </div>
                     <div>
-                        <button className=" px-16 py-5  rounded-full bg-pink">
-                            SUBSCRIBE
-                        </button>
+                        <PrimaryButton>Subscribe</PrimaryButton>
                     </div>
                 </div>
             </div>
