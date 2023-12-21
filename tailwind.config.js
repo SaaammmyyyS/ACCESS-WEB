@@ -2,6 +2,8 @@ import defaultTheme from "tailwindcss/defaultTheme";
 import forms from "@tailwindcss/forms";
 const colors = require("tailwindcss/colors");
 
+const colors = require("tailwindcss/colors");
+
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
@@ -18,10 +20,15 @@ export default {
             secondary: "#000000",
             pink: "#EB14BC",
             purple: "#AF14EB",
-            "light-purple": "#D4D3F8",
-            "lighter-purple" : "#D4D3F8",
+            "light-purple": "#CF72F3",
+            "lighter-purple": "#D4D3F8",
             "dark-purple": "#46085E",
-            "footer-bg": "#27282B",
+            "darker-purple": "#150030",
+            footer: "#27282B",
+        },
+        backgroundImage: {
+            "contact-section": "url('/assets/images/contact-bg.png')",
+            "access-wizard": "url('/assets/images/access-wizard.png')",
         },
         extend: {
             fontFamily: {
