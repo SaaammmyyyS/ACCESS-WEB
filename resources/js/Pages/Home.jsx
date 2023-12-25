@@ -1,6 +1,7 @@
 import { Link, Head } from "@inertiajs/react";
 import {
     HeroSection,
+    AboutUsSection,
     EventSection,
     BlogSection,
     ContactSection,
@@ -12,6 +13,7 @@ export default function Home() {
         <>
             <Guest title="Home">
                 <HeroSection />
+                <AboutUsSection />
                 <EventSection />
                 <BlogSection />
                 <ContactSection />
