@@ -1,10 +1,30 @@
 import { Link } from "@inertiajs/react";
+import { useEffect, useState } from "react";
 import logo from "/public/assets/images/logo.png";
 import PrimaryButton from "@/Components/ui/PrimaryButton";
 
+
 export default function MainNavBar() {
+    const [bgClass, setBgClass] = useState("");
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+                if(currentScrollY > 800) {
+                    setBgClass('bg-purple');
+                } else {
+                    setBgClass('');
+                }
+        }
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    
     return (
-        <div className="w-full h-auto fixed text-white">
+        <div className={`w-full h-auto fixed text-white ${bgClass} transition-colors duration-100`}>
             <div className="flex justify-around items-center p-5">
                 <div>
                     <Link to="/">

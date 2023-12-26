@@ -3,8 +3,6 @@ import forms from "@tailwindcss/forms";
 
 const colors = require("tailwindcss/colors");
 
-const colors = require("tailwindcss/colors");
-
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
