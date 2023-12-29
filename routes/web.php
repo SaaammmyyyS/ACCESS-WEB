@@ -20,8 +20,8 @@ Route::get('/', function () {
     return Inertia::render('Home', []);
 });
 
-Route::get('/francis', function () {
-    return Inertia::render('Francis');
+Route::get('/committee', function () {
+    return Inertia::render('Committee');
 });
 
 Route::get('/dashboard', function () {
