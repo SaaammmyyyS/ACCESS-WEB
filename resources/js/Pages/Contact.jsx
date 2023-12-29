@@ -3,7 +3,6 @@ import {
     MessageSection,
     QuestionSection,
     SubscribeSection,
-    NewsSection,
 } from "@/Components/Contact";
 import Guest from "@/Layouts/GuestLayout";
 
