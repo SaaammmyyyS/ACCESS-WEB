@@ -2,7 +2,7 @@ import PrimaryButton from "@/Components/ui/PrimaryButton";
 
 export default function HeroSection() {
     return (
-        <div className="h-screen bg-[url('/public/assets/images/Hero-Image.png')] bg-cover">
+        <div className="min-h-screen bg-[url('/public/assets/images/Hero-Image.png')] bg-cover">
             <div className="flex h-full">
                 <div className="text-white my-44 w-4/12 mx-80">
                     <h1 className="text-9xl font-bold text-purple">ACCESS</h1>
