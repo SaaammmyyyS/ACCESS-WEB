@@ -20,6 +20,10 @@ Route::get('/', function () {
     return Inertia::render('Home', []);
 });
 
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+});
+
 Route::get('/francis', function () {
     return Inertia::render('Francis');
 });
