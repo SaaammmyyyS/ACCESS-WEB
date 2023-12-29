@@ -27,6 +27,7 @@ export default {
         },
         backgroundImage: {
             "contact-section": "url('/assets/images/contact-bg.png')",
+            "subscribe-section": "url('/assets/images/subscribe-bg.png')",
             "access-wizard": "url('/assets/images/access-wizard.png')",
         },
         extend: {

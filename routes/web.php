@@ -24,6 +24,10 @@ Route::get('/committee', function () {
     return Inertia::render('Committee');
 });
 
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
