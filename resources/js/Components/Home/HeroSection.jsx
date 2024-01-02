@@ -4,7 +4,7 @@ export default function HeroSection() {
     return (
         <div className="min-h-screen bg-[url('/public/assets/images/Hero-Image.png')] bg-cover">
             <div className="flex h-full">
-                <div className="text-white my-44 w-4/12 mx-80">
+                <div className="text-white py-44 w-4/12 mx-80">
                     <h1 className="text-9xl font-bold text-purple">ACCESS</h1>
                     <h2 className="text-6xl py-4 inline-block">
                         THE TECH ECOSYSTEM

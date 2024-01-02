@@ -11,7 +11,7 @@ import Guest from "@/Layouts/GuestLayout";
 export default function Home() {
     return (
         <>
-            <Guest title="Home">
+            <Guest title="Home" isNav={true}>
                 <HeroSection />
                 <AboutUsSection />
                 <EventSection />
