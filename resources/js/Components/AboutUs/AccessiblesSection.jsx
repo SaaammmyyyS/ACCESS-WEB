@@ -3,14 +3,22 @@ import PrimaryButton from "@/Components/ui/PrimaryButton";
 
 export default function AccessibleSection(){
     return(
-        <div className=" w-full min-h-screen bg-[url('/public/assets/images/AccessiblesBg.png')] bg-contain">
+        <div className=" w-full min-h-screen bg-[url('/public/assets/images/AccessiblesBg.png')] bg-cover 2xl:bg-contain">
             {/* container */}
-            <div className="flex flex-col justify-between items-center pt-32"> 
-                <h3 className="font-extrabold text-2xl mb-5 text-purple">What can you find here?</h3>
-                <h1 className="text-8xl font-bold text-dark-purple mb-10"> 
-                    <span className=" text-purple">ACCESS</span>ibles Offered
-                </h1>
-                <div className="grid grid-cols-3 gap-4">
+            <div className="flex flex-col justify-around items-center gap-10 xl:gap-20"> 
+                <div className="flex flex-col items-center pt-36">
+                    <h3 className="font-extrabold text-2xl mb-5 text-purple">What can you find here?</h3>
+                    <h1 className="hidden lg:block text-8xl font-bold text-dark-purple mb-10"> 
+                        <span className=" text-purple">ACCESS</span>ibles Offered
+                    </h1>
+                    <div className=" flex flex-col items-center lg:hidden">
+                        <h1 className="text-8xl font-bold text-dark-purple mb-10">
+                            <span className=" text-purple">ACCESS</span>ibles
+                        </h1>
+                        <h1 className="text-8xl font-bold text-dark-purple mb-10">Offered</h1>
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
                     <AccessibleGridComponent
                         title= {"Resources"}
                         content={
@@ -72,7 +80,7 @@ export default function AccessibleSection(){
                         }
                     />
                 </div>
-                <div className="flex justify-center pt-5 items-center">
+                <div className="pt-5 pb-36 flex justify-center items-center">
                     <AccessibleGridComponent 
                         isGrid="w-2/5"
                         title ={"Lorem Ipsum Dolor Sit Amet!"}

@@ -14,9 +14,19 @@ export default function AboutUsSection(
         sectionBg,
         }) {
     return(
-        <div className={` w-full min-h-screen flex justify-between items-center ${sectionBg}`}>
+        <div className={` w-full min-h-screen py-10 flex justify-between items-center ${sectionBg}`}>
             {/* container */}
-            <div className='flex'>
+            <div className='xl:flex lg:justify-between items-center w-full h-full' >
+                {/* box2 */}
+                <div className={"flex bg-[url('/public/assets/images/aboutBg.png')] bg-cover m-10 " + content2Order} >
+                    {/* picture box */}
+                    <div className='p-20 w-full '>
+                        {/*Img*/}
+                        <div className='h-[30rem] w-[30rem] xl:h-[45rem] xl:w-[45rem]'> 
+                            <img src={imgSrc} alt="Events1" className='h-full w-full bg-cover'/>
+                        </div>
+                    </div>
+                </div>
                 {/* box1 */}
                 <div className={` pl-40 w-full h-5/12 flex flex-col justify-center p-10 ` + content1Order}>
                     {hasTitle1 
@@ -37,16 +47,6 @@ export default function AboutUsSection(
                         </div> 
                         : null
                     }
-                </div>
-                {/* box2 */}
-                <div className={"flex bg-[url('/public/assets/images/aboutBg.png')] bg-cover " + content2Order} >
-                    {/* picture box */}
-                    <div className='p-20 pr-52 w-full'>
-                        {/*Img*/}
-                        <div className='h-200px w-200px'> 
-                            <img src={imgSrc} alt="Events1" className='h-full w-full bg-cover'/>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
