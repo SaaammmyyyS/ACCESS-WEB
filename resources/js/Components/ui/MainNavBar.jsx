@@ -19,7 +19,7 @@ export default function MainNavBar({
                     }
             }
             window.addEventListener('scroll', handleScroll);
-    
+
             return () => {
             window.removeEventListener('scroll', handleScroll);
             };
@@ -56,7 +56,7 @@ export default function MainNavBar({
                         </Link>
                     </div>
                     <div>
-                        <PrimaryButton>Subscribe</PrimaryButton>
+                        <PrimaryButton className="text-xs lg:text-base">Subscribe</PrimaryButton>
                     </div>
                 </div>
             </div>

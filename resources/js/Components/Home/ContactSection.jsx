@@ -2,18 +2,17 @@ import PrimaryButton from "@/Components/ui/PrimaryButton";
 
 export default function ContactSection() {
     return (
-        <section className="h-72 bg-contact-section bg-cover bg-center bg-no-repeat">
-            <div className="flex justify-between items-center h-full w-3/5 mx-auto ">
-                <div className="flex flex-col justify-center items-center w-1/2 h-full">
-                    <span className="text-6xl font-bold text-light-purple">
+        <section className="bg-darker-purple p-20">
+            <div className="flex justify-center items-center h-full mx-auto gap-10">
+                <div className="flex flex-col justify-center items-center h-full">
+                    <span className="lg:text-6xl text-xl text-light-purple text-center">
                         Would you like to
-                    </span>
-                    <span className="text-6xl font-bold text-light-purple">
+                        <br />
                         collaborate with us?
                     </span>
                 </div>
-                <div className="flex justify-center items-center w-1/2 h-full">
-                    <PrimaryButton>Connect With Us</PrimaryButton>
+                <div className="flex justify-center items-center">
+                    <PrimaryButton className="px-10 text-[8px] sm:text-xs lg:text-base sm:px-16">Connect With Us</PrimaryButton>
                 </div>
             </div>
         </section>

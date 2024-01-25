@@ -9,7 +9,7 @@ import Guest from "@/Layouts/GuestLayout";
 export default function Contact() {
     return (
         <>
-            <Guest title="Contact">
+            <Guest title="Contact" isNav={true}>
                 <MessageSection />
                 <QuestionSection />
                 <SubscribeSection />

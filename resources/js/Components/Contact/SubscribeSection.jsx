@@ -2,16 +2,16 @@ import PrimaryButton from "@/Components/ui/PrimaryButton";
 
 export default function SubscribeSection() {
     return (
-        <section className="h-72 bg-darker-purple bg-subscribe-section bg-cover bg-center bg-no-repeat">
-            <div className="flex flex-col items-center gap-8 p-10">
-                <span className="text-6xl font-bold text-light-purple">
+        <section className="bg-darker-purple">
+            <div className="flex flex-col items-center gap-8 p-20">
+                <span className="text-2xl font-bold text-light-purple lg:text-6xl text-center">
                     Want to keep up with ACCESS
                 </span>
-                <span className="text-sm text-light-purple">
+                <span className="text-[12px] text-light-purple">
                     Subscribe now to receive all the latest news and event invites
                 </span>
                 <div className="flex h-10">
-                    <PrimaryButton>SUBSCRIBE TO THE NEWSLETTER</PrimaryButton>
+                    <PrimaryButton className="px-10 text-[8px] sm:text-xs lg:text-base sm:px-16">SUBSCRIBE TO THE NEWSLETTER</PrimaryButton>
                 </div>
             </div>
         </section>
